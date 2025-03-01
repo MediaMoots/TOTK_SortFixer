@@ -2,6 +2,12 @@
 
 namespace sort
 {
+    static constexpr int s_arraySize = 600;
+    static char s_armorSortInfo[s_arraySize * 0x1c0] = {0};
+    static void *s_armorSortInfoPtrs[s_arraySize] = {0};
+    static char s_sortInfo[s_arraySize * 0x18] = {0};
+    static char s_sortInfoDouble[(s_arraySize * 0x18) * 2] = {0};
+
     static constexpr int s_sortArmorPouchOffsets[] = {
         0x01a27284, // 1.0.0
         0x01a817b0, // 1.1.0
