@@ -9,60 +9,38 @@ namespace sead
         size_t length;
     };
 
-    struct BufferedSafeStringBaseChar{
+    struct BufferedSafeString
+    {
         SafeString mString;
         int mBufferSize;
     };
+
+    template <size_t N>
+    struct FixedSafeString
+    {
+        char *mString;
+        int mSize = N;
+        char mStringStorage[N];
+    };
 }
 
-namespace pp::TypedParam
+struct ArmorSortInfo
 {
-    struct ParentResolver {
-        void* mpDocument;     
-        void* mpParentHandle;   
-        uint32_t mParentId;     
-        uint32_t unknown3;     
-    };
+    int index;
+    sead::FixedSafeString<256> name;
+    sead::FixedSafeString<64> category;
+    sead::FixedSafeString<64> series;
+    u32 color_variation;
+};
 
-    struct TypedParam {
-        void* mVtable;      
-        char* mpParentPath;    
-        ParentResolver mParentResolver;  
-        void* mpHandle;    
-    };
+struct ListNode
+{
+    void *mpPrev;
+    void *mpNext;
+};
 
-    struct PropBuffer {
-        void* mVtable;    
-        void* mpInfo;        
-        PropBuffer* mpParent; 
-        void** mpBuffer;    
-        int mMax;         
-        int mCount;       
-    };
-
-    struct PouchSortTable {
-        TypedParam mBase;                 
-        PropBuffer mArmorCategory;         
-        PropBuffer mArmorDyeColor;          
-        PropBuffer mArmorSeries;            
-        PropBuffer mBowEffect;             
-        PropBuffer mFoodEffect;
-        sead::SafeString mMaterialBowAttachmentTag;
-        
-        PropBuffer mMaterialCategory;       
-        PropBuffer mShieldEffect;           
-        PropBuffer mWeaponCategory;         
-        PropBuffer mWeaponEffect;          
-    
-        bool mWeaponCategoryIsPresent;    
-        bool mWeaponEffectIsPresent;       
-        bool mBowEffectIsPresent;           
-        bool mShieldEffectIsPresent;     
-        bool mArmorCategoryIsPresent;      
-        bool mArmorDyeColorIsPresent;       
-        bool mArmorSeriesIsPresent;         
-        bool mMaterialCategoryIsPresent;    
-        bool mMaterialBowAttachmentTagIsPresent; 
-        bool mFoodEffectIsPresent;   
-    };
-}
+struct SortInfo
+{
+    int mIndex;
+    ListNode mListNode;
+};
