@@ -50,9 +50,9 @@ extern "C" void exl_main(void *x0, void *x1)
 
     // sortUpdateGameData::InstallAtOffset(0x01a7450c);
 
-    info1::InstallAtOffset(0x01a73374);
-    info2::InstallAtOffset(0x01a73388);
-    info3::InstallAtOffset(0x01a73390);
+    info1::InstallAtOffset(0x01a764f4);
+    // info2::InstallAtOffset(0x01a73388);
+    // info3::InstallAtOffset(0x01a73390);
 
     installHooks();
 }
