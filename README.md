@@ -1,9 +1,18 @@
-# exlaunch
-A framework for injecting C/C++ code into Nintendo Switch applications/applet/sysmodules.
+# TOTK Sort Fixer  
 
-# Note
-This project is a work in progress. If you have issues, reach out to Shadów#1337 on Discord.
+**TOTK Sort Fixer** is a **subsdk mod (subsdk6) powered by exlaunch** that resolves the issue where items get lost after increasing the game data cap and then sorting.  
 
-# Credit
-- Atmosphère: A great reference and guide.
-- oss-rtld: Included for (pending) interop with rtld in applications (License [here](https://github.com/shadowninja108/exlaunch/blob/main/source/lib/reloc/rtld/LICENSE.txt)).
+## 🚀 Installation  
+
+1. Place the mod in the **exefs** folder.  
+2. **Important:** The `main.npdm` file is shared between exefs mods.  
+   - If your exefs folder already contains `main.npdm`, either **overwrite it** or **skip copying it** to avoid conflicts.  
+
+## 📥 Download  
+
+Get the latest version from the **[Releases](https://github.com/MediaMoots/TOTK_SortFixer/releases)** page.  
+
+## 🏆 Credits  
+
+- **[@dt-12345](https://github.com/dt-12345)** – Reverse engineering assistance  
+- **[@shadowninja108](https://github.com/shadowninja108)** – exlaunch development  
