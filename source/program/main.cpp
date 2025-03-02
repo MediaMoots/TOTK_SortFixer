@@ -1,5 +1,5 @@
 #include "binaryoffsethelper.hpp"
-#include "hooks.hpp"
+#include "armor_hooks.hpp"
 #include "lib.hpp"
 #include "utils.hpp"
 
@@ -21,7 +21,7 @@ extern "C" void exl_main(void *x0, void *x1)
 
     PRINT("SRTFX: Version Index %d", sort::helpers::GetAppVersionIndex());
     PRINT("SRTFX: Hooking Functions...");
-    InstallHooks();
+    sort::armor::InstallHooks();
 }
 
 extern "C" NORETURN void exl_exception_entry()

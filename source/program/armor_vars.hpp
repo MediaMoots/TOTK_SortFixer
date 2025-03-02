@@ -1,6 +1,6 @@
 #pragma once
 
-namespace sort
+namespace sort::armor
 {
     static constexpr int s_arraySize = 600;
     static char s_armorSortInfo[s_arraySize * 0x1c0] = {0};
