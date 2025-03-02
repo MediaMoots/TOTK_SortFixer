@@ -11,7 +11,8 @@
 #define EXL_SUPPORTS_REBOOTPAYLOAD
 */
 
-namespace exl::setting {
+namespace exl::setting
+{
     /* How large the fake .bss heap will be. */
     constexpr size_t HeapSize = 0x1000;
 
@@ -24,4 +25,4 @@ namespace exl::setting {
     /* Sanity checks. */
     static_assert(ALIGN_UP(JitSize, PAGE_SIZE) == JitSize, "");
     static_assert(ALIGN_UP(InlinePoolSize, PAGE_SIZE) == JitSize, "");
-}
+} // namespace exl::setting

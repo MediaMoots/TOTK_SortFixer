@@ -15,14 +15,13 @@ namespace sead
         int mBufferSize;
     };
 
-    template <size_t N>
-    struct FixedSafeString
+    template <size_t N> struct FixedSafeString
     {
         char *mString;
         int mSize = N;
         char mStringStorage[N];
     };
-}
+} // namespace sead
 
 struct ArmorSortInfo
 {

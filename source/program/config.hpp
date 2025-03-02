@@ -19,7 +19,7 @@ namespace sort
 
     // Bounds Patches
     static constexpr int s_setArraySizeX9Offsets[] = {
-        0x0,
+        0x01a27358,
         0x01a81884,
         0x01a7f198,
         0x01a75d78,
@@ -28,7 +28,7 @@ namespace sort
     };
 
     static constexpr int s_setArraySizeW8Offsets[] = {
-        0x0,
+        0x01a2782c,
         0x01a81d58,
         0x01a7f66c,
         0x01a7624c,
@@ -37,7 +37,7 @@ namespace sort
     };
 
     static constexpr int s_setDoubleArraySizeW8Offsets[] = {
-        0x0,
+        0x01a28ab4,
         0x01a82fe0,
         0x01a808f4,
         0x01a774d4,
@@ -47,7 +47,7 @@ namespace sort
 
     // Buffer Patches
     static constexpr int s_setArmorSortInfoX8Offsets[] = {
-        0x0,
+        0x01a27318,
         0x01a81844,
         0x01a7f158,
         0x01a75d38,
@@ -56,7 +56,7 @@ namespace sort
     };
 
     static constexpr int s_setArmorSortInfoPtrX8Offsets[] = {
-        0x0,
+        0x01a27354,
         0x01a81880,
         0x01a7f194,
         0x01a75d74,
@@ -65,7 +65,7 @@ namespace sort
     };
 
     static constexpr int s_setSortInfoX8Offsets[] = {
-        0x0,
+        0x01a277fc,
         0x01a81d28,
         0x01a7f63c,
         0x01a7621c,
@@ -74,7 +74,7 @@ namespace sort
     };
 
     static constexpr int s_setDoubleSortInfoX8Offsets[] = {
-        0x0,
+        0x01a28aa8,
         0x01a82fd4,
         0x01a808e8,
         0x01a774c8,
